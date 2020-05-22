@@ -129,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "visionNexusAlphaV1"
+  "defaultProject": "visionNexusAlphaV1",
+  "cli": {
+    "analytics": "6ac93701-85f1-4c68-892c-67aa89f5a805"
+  }
 }
