@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "visionnexusalpha": {
+      "hosting": {
+        "visionNexusAlphaV1": [
+          "visionnexusalpha"
+        ]
+      }
+    }
+  }
+}

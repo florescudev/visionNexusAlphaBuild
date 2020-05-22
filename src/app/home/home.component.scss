@@ -1,0 +1,71 @@
+@import '../../styles.scss';
+
+.presentation-div {
+    height: 550px;
+    font-weight: bold;
+    background-image: url('../../assets/img/undraw_opinion_dxp8.svg');
+    background-repeat: no-repeat;
+    // background-size: ;
+    background-position: left;
+    padding: 0px;
+    .section-title {
+        h1 {
+            padding: 16px;
+            text-align: center;
+            font-size: 36px;
+            color: $primaryRed;
+            font-weight: bold;
+            line-height: 1.7;
+        }
+        h6 {
+            color: $melon;
+            text-align: justify;
+            width: 50%;
+            margin-left: 25%;
+            font-weight: bold;
+            line-height: 1.7;
+        }
+    }
+}
+
+
+
+.services-presentation {
+    margin-top: 70px;
+    h2 {
+        font-size: 26px;
+        text-align: center;
+        margin-bottom: 40px;
+        font-weight: 700;
+    }
+    .short-description {
+        font-size: 16px;
+        width: 70%;
+        margin-left: 15%;
+        text-align: justify;
+        line-height: 1.7;
+        margin-bottom: 40px;
+        color: $primaryRed;
+        font-weight: 600;
+    }
+    .service-items {
+        margin: 20px;
+        text-align: center;
+        .columns .column {
+            text-align: center;
+            background-color: $melon;
+        }
+        .item {
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+    }
+    .tech-image {
+        height: 40px;
+        display: block;
+        margin: 15px;
+        text-align: center;
+    }
+}

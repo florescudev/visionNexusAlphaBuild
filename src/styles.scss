@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "https://fonts.googleapis.com/css?family=Lato";
+
+/* Colors */
+$primaryRed: #eb2f06;
+$melon: #f8c291;
+$yellow: #f6b93b;
+
+*, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', serif;
+};

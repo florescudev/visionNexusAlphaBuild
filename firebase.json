@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "visionNexusAlphaV1",
+      "public": "dist/visionNexusAlphaV1",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}
