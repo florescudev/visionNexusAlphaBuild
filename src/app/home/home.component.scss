@@ -13,12 +13,12 @@
             padding: 16px;
             text-align: center;
             font-size: 36px;
-            color: $primaryRed;
+            color: $primaryPurple;
             font-weight: bold;
             line-height: 1.7;
         }
         h6 {
-            color: $melon;
+            color: $primaryBlue;
             text-align: justify;
             width: 50%;
             margin-left: 25%;
@@ -45,7 +45,7 @@
         text-align: justify;
         line-height: 1.7;
         margin-bottom: 40px;
-        color: $primaryRed;
+        color: $primaryPurple;
         font-weight: 600;
     }
     .service-items {
@@ -53,7 +53,7 @@
         text-align: center;
         .columns .column {
             text-align: center;
-            background-color: $melon;
+            background-color: $primaryBlue;
         }
         .item {
             font-size: 2em;
