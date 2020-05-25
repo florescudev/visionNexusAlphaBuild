@@ -8,11 +8,11 @@ import { switchMap, map } from 'rxjs/operators';
 
 import { User } from './user';
 import { Router } from '@angular/router';
-import { Action } from 'rxjs/internal/scheduler/Action';
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class AuthService {
 
   // Declare the user variable as observable obj
@@ -21,15 +21,13 @@ export class AuthService {
   private $userCollection: AngularFirestoreCollection<User>; // Init FS collection
   private $user: AngularFirestoreDocument<User>;
 
-
   constructor(private firebaseAuth: AngularFireAuth, 
               private afs: AngularFirestore,
               private router: Router) {
-          
+                
             this.$userCollection = this.afs.collection<User>('users');
             this.user = this.firebaseAuth.authState;
-           
-           
+  
    }
 
    singUp(email: string, password: string, uid) {
@@ -54,17 +52,16 @@ export class AuthService {
      this.firebaseAuth.authState.subscribe(
       user => {
         userInfo.uid = user.uid;
+        userInfo.email = user.email;
       }
     )
      this.$userCollection.add(userInfo);
      console.log('User succesfully stored!');
    }
 
-
    logIn(email: string, password: string, uid) {
      this.firebaseAuth.signInWithEmailAndPassword(email, password)
      .then(value => {
-       this.saveUserOnFirestore(email, uid);
        console.log('Nice to see you in!');
      })
      .catch(err => {

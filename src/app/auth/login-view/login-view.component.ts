@@ -24,17 +24,17 @@ export class LoginViewComponent implements OnInit {
               public firebaseAuth: AngularFireAuth) { }
 
 
-              public uid: {} = this.firebaseAuth.authState.subscribe(uid => {
-                this.uid = uid.uid;
+              public userInfo: {} = this.firebaseAuth.authState.subscribe(uid => {
+                this.userInfo = uid.uid;
               });
 
   signUp() {
-    this.authService.singUp(this.email, this.password, this.uid);
+    this.authService.singUp(this.email, this.password, this.userInfo);
     this.email = this.password = '';
   }
 
   logIn() {
-    this.authService.logIn(this.email, this.password, this.uid);
+    this.authService.logIn(this.email, this.password, this.userInfo);
     this.email = this.password = '';
   }
 
