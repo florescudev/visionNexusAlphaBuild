@@ -17,30 +17,9 @@ export class LoginViewComponent implements OnInit {
   password: string;
   
 
-  $userDoc: AngularFirestoreDocument<User>;
-  $user: Observable<User>;
-
   constructor(public authService: AuthService,
               public firebaseAuth: AngularFireAuth) { }
-
-
-              public uid: {} = this.firebaseAuth.authState.subscribe(uid => {
-                this.uid = uid.uid;
-              });
-
-  signUp() {
-    this.authService.singUp(this.email, this.password, this.uid);
-    this.email = this.password = '';
-  }
-
-  logIn() {
-    this.authService.logIn(this.email, this.password, this.uid);
-    this.email = this.password = '';
-  }
-
-  logOut() {
-    this.authService.logOut();
-  }
+  
 
   ngOnInit(): void {
   }
